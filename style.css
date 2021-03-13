@@ -5,12 +5,22 @@ body{
     direction: rtl;
     text-align: right;
     font-family: 'Arial (Hebrew)', Arial;
-     font-size: 12px; 
+    font-size: 12px; 
     color:#fff;
 }
-a { text-decoration: none; outline: none; }
-h3 { font-size: 14px; font-weight: bold;}
+a{ 
+    text-decoration: none;
+    outline: none; 
+    color:#fff;
+}
 
+a:hover{
+    text-decoration: underline; 
+    color: #005CA0 !important;
+}
+
+h3 { font-size: 14px; font-weight: bold;}
+.lang {font-size: 12px; font-weight: bold;}
 
 .container{
     width:100%;
@@ -21,23 +31,22 @@ main, header .row, footer .sub-nav{
     width:900px;
     margin:0px auto;
     display: flex;
-   
-  
 }
+
 main {
     flex-direction: column;
+    margin-top: 30px;
 }
+
 .row {
     width:100%;
     display: flex;
     justify-content: space-between;
-   
-    
 }
 
 .col-33{
-width:33,33%;
-border:1px solid gray;
+    width:33,33%;
+    border:1px solid gray;
 }
 
 /* Header Layout*/
@@ -46,42 +55,61 @@ header {
     display: flex;
     flex-direction: column;
     background: rgb(144,144,144);
-background: linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(168,168,168,1) 85%, rgba(221,221,221,1) 100%);
+    background: linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(168,168,168,1) 85%, rgba(221,221,221,1) 100%);
 }
 
-header .row:first-child{
-    align-items: flex-end; 
+header .row:first-child {
+    align-items:center;
     justify-content:flex-end;  
-    border:1px solid black;}
-     
+    margin-top:20px;
+}
+
 header .row:last-child{
     position:relative;
+    margin-top:10px;
 }
 
-.logo {position:absolute;border:1px solid green;}
+/* first row -- search-box */
+.button {
+    border:0px;
+    padding:0px;
+    height:19px;
+    cursor:pointer;}
+    input{width:132px;}
+    .lang {margin-left:10px;
+    }
+
+/* second row -- logo and nav*/
+.logo {
+    position:absolute;
+    top:-24px;
+    right:-10px;
+}
 
 .main-nav{
     border:1px solid blue;
     width:100%;
 }
+
 .main-nav ul{
     list-style: none;
-    padding:0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     border:1px solid black;
-    margin-right:142px;
+    margin-right:100px;
     font-size: 15px;
     font-weight: bold;
-    
 }
 
 .main-nav ul li{
-  border-left:1px solid black;
+    border-left:1px solid green;
+}
 
-  
-   
-    
+.main-nav > ul > li > a{
+    display:block;
+    color:#fff;
+    margin:0px auto;
+    padding-left:15px;
 }
 
 /* Main Layout*/
@@ -91,10 +119,18 @@ header .row:last-child{
 .smaller {
     padding-right:20.5px;
     padding-left:20.5px;
- 
+
 }
 /* Footer Layout*/
-footer{
-    background: rgb(144,144,144);
-    background: linear-gradient(180deg, rgba(221,221,221,1) 100%, rgba(168,168,168,1) 85%, rgba(144,144,144,1) 0%);
+footer{/*border:1px solid green;position:relative;
+height:50px;*/
+background: rgb(144,144,144);
+background: linear-gradient(180deg, rgba(221,221,221,1) 100%, rgba(168,168,168,1) 85%, rgba(144,144,144,1) 0%);
+
+}
+
+footer .sub-nav{
+/*
+position:fixed;
+bottom:0px;*/
 }
