@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paz - home page</title>
+    <title>פז - צור קשר</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
                     <nav class="main-nav">
                        <ul> 
                            <li>
-                               <a class="active no-border" href="#">
+                               <a class="active no-border" href="index.html">
                                    <img src="./images/menu_home-blue.png" alt="home">
                                 </a>
                             </li>
@@ -105,7 +105,7 @@
             </div><!-- end of second row in header-->
         </header>
         <main>
-            <section class="row">
+            <section class="row contact">
                 <div class="col-right">
                     <div class="right-menu">
                             <a href="contact.html">צור קשר</a>
@@ -119,16 +119,16 @@
                             </div>
                         </div>
                         <div class="row">
-                            <section class="contact">
-                                <h1>צור קשר</h2>
-                                    <div class="border-radius-top bg-light-gradient">
-                                        <h2>צור קשר</h2>
+                            <section class="contact-form">
+                                <h2>צור קשר</h2>
+                                    <form id="myform" class="form-details border-radius-top bg-light-gradient">
+                                        <h3>צור קשר</h3>
                                         <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
                                             <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
-                                            <form id="myform">
-                                                <fieldset>
+                                            <!--form id="myform"-->
+                                                <fieldset class="fieldset">
                                                     <div>
-                                                        <label for="fname">* שם</label>
+                                                        <label for="fname">* שם פרטי</label>
                                                         <input type="text" autofocus required name="fname" id="fname" >
                                                     </div>
                                                     <div>
@@ -148,18 +148,21 @@
                                                 
                                                 <div class="text-field">
                                                 
-                                                    <textarea name="text" id="text" cols="30" rows="10" placeholder="תוכן הפניה"></textarea>
+                                                    <textarea name="text" id="text" cols="33" rows="7" placeholder="תוכן הפניה"></textarea>
                                                     
                                                 </div>
-                                                <button type="button">שלח</button>
+                                                <div>
+                                                     <button class="read-more clearfix" type="button">שלח</button>
+                                                 </div>
                                             </fieldset>
-                                        
+                                           
                                         </form>
-                                    </div><!--end of border radius-->
+                                
+                                 
                             </section>
                             <section class="details">
-                               <div class=" border-radius-top bg-light-gradient">
-                                   <h2>פרטי יצירת קשר</h2>
+                               <div class="border-radius-top bg-light-gradient">
+                                   <h3>פרטי יצירת קשר</h3>
                                    <p><span>פז חברת נפט בע"מ</span><br/>
                                     יורו פארק, בניין הולנד<br/>
                                     קיבוץ יקום 60972<br/>
@@ -168,12 +171,11 @@
                                       </p>
                                </div>
                                <div class=" border-radius-top bg-light-gradient">
-                                <h2>פרטי יצירת קשר</h2>
-                                <p><span>פז חברת נפט בע"מ</span><br/>
-                                 יורו פארק, בניין הולנד<br/>
-                                 קיבוץ יקום 60972<br/>
-                                 טל. שירות לקוחות 1-800-774-774<br/>
-                                 פקס.09-8641714
+                                <h3>עוד בפז</h3>
+                                    <p><span>פז חברת נפט בע"מ</span><br/>
+                                        <a class="" href="#"> עמוד בית</a><br/>
+                                        <span>פז חברת נפט בע"מ</span><br/>
+                                        <a class="" href="#"> עמוד בית</a><br/>
                                    </p>
                                </div>
                             </section>
