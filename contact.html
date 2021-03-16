@@ -11,17 +11,17 @@
     <div class="container">
         <header class="bg-trans-down">
             <div class="row">                
-                    <div class="lang">
-                        <a href="#">English</a>
-                    </div>
-                   
-                        <form class="">
-                            <input class="border-radius-small" type="text" placeholder="רשום מילת חיפוש" name="search">
+                <div class="lang">
+                    <a href="#">English</a>
+                </div>
+               
+                    <form class="search-box">
+                        <input class="border-radius-small" type="text" placeholder="רשום מילת חיפוש" name="search">
+                        
+                    </form>
+                    <button class="button" type="button"><img src="./images/search_button.png" alt=""></img></button>
                             
-                        </form>
-                        <button class="button" type="button"><img src="./images/search_button.png" alt=""></img></button>
-                                
-            </div><!-- end of first row in header-->
+        </div><!-- end of first row in header-->
             <div class="row">
                 <div class="logo">
                     <a href="index.html"><img src="./images/paz_logo.png" alt="paz logo"></a>
@@ -29,9 +29,7 @@
                     <nav class="main-nav">
                        <ul> 
                            <li>
-                               <a class="active no-border" href="index.html">
-                                   <img src="./images/menu_home-blue.png" alt="home">
-                                </a>
+                               <a class="icons no-border" href="index.html"></a>
                             </li>
                             <li class="dropdown">
                                 <a href ="#">אודות</a>
@@ -114,8 +112,12 @@
                 <div class="col-left">
                     
                         <div class="row">
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">עמוד בית</a></li>
+                                <li>&nbsp;>&nbsp;צור קשר</li>
+                              </ul>
                             <div class="breadcrumbs">
-                                <a class="treelink" href="index.html"> עמוד בית</a>
+                                <a class="treelink" href=""> </a>
                             </div>
                         </div>
                         <div class="row">
@@ -123,7 +125,7 @@
                                 <h2>צור קשר</h2>
                                     <form id="myform" class="form-details border-radius-top bg-light-gradient">
                                         <h3>צור קשר</h3>
-                                        <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
+                                        <p class="caption">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
                                             <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
                                             <!--form id="myform"-->
                                                 <fieldset class="fieldset">
@@ -163,7 +165,7 @@
                             <section class="details">
                                <div class="border-radius-top bg-light-gradient">
                                    <h3>פרטי יצירת קשר</h3>
-                                   <p><span>פז חברת נפט בע"מ</span><br/>
+                                   <p><span class="caption">פז חברת נפט בע"מ</span><br/>
                                     יורו פארק, בניין הולנד<br/>
                                     קיבוץ יקום 60972<br/>
                                     טל. שירות לקוחות 1-800-774-774<br/>
@@ -172,10 +174,10 @@
                                </div>
                                <div class=" border-radius-top bg-light-gradient">
                                 <h3>עוד בפז</h3>
-                                    <p><span>פז חברת נפט בע"מ</span><br/>
-                                        <a class="" href="#"> עמוד בית</a><br/>
-                                        <span>פז חברת נפט בע"מ</span><br/>
-                                        <a class="" href="#"> עמוד בית</a><br/>
+                                    <p><span class="caption">ליצירת קשר עם דוברות פז</span><br/>
+                                        <a href="#"> לחצו כאן>> </a><br/>
+                                        <span class="caption">רוצים לעבוד בפז?</span><br/>
+                                        <a  href="#"> לחצו כאן>></a><br/>
                                    </p>
                                </div>
                             </section>

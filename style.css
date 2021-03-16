@@ -1,10 +1,9 @@
-*{box-sizing: border-box; margin:0px;}
+*{box-sizing: border-box; margin:0px;font-family: 'Arial (Hebrew)', Arial;}
 
 body{
     margin:0px;
     direction: rtl;
     text-align: right;
-    font-family: 'Arial (Hebrew)', Arial;
     font-size: 13px; 
     color:#fff;
 }
@@ -161,6 +160,18 @@ form{
     top:-5px;
     right:-8px;
   }
+.icons{
+    background: url(./images/menu_home-gray.png);
+    display:inline-block;
+    width:17px;
+    height:15px;
+    content:""; background-repeat:no-repeat;
+   
+}
+.icons:hover, .active{
+    background: url(./images/menu_home-blue.png);
+    background-repeat:no-repeat;
+}
 
   .main-nav{
       z-index:1;
@@ -344,27 +355,28 @@ width:788px;
 
 }
 .col-left *, .col-right *{
-    color:#575757;
+    color:#72716d;
 }
-.right-menu a{
-    
-}
+ul.breadcrumb {
+    padding: 0px 4px;
+   
+  }
+  
+
+
+
 .contact-form{
     width:60%;
 }
-.contact-form  h3, .details > div > h3{
+.contact-form h3, .details > div > h3{
     display:block;
-    border-bottom:1px solid #bbb;
-    padding-bottom:4px;
-    color:#005CA0;
-}
-.contact-form > h3, .details > div > h3{
-    display:block;
-    border-bottom:1px solid #bbb;
+    border-bottom:1px solid #dfdfdf;
     padding-bottom:4px;
     color:#005CA0;
 }
 
+.contact-form > h2{display:block;
+    border-bottom:1px solid #dfdfdf;}
 
 #myform{
     margin-left:60px;
@@ -372,6 +384,7 @@ width:788px;
     padding:20px 30px 0px 30px;
     margin-top:10px;
 }
+.form-details > h3{border:none;}
 
 label{
     width:75px;
@@ -379,12 +392,14 @@ label{
     padding-bottom:10px;
  
 }
-fieldset{
+.fieldset{
      border:none !important; 
     display:block;
-   
- 
-
+    /* padding-right:50px; */
+    width: 277px;
+}
+.fieldset button{
+    cursor:pointer;
 }
 .details{
     margin-top: 20px;
@@ -403,4 +418,12 @@ fieldset{
 .details > div > p{
    
     width:248px;
+}
+
+.caption{
+    display:inline-block;
+    color:#6d6d6d;
+    font-weight:700;
+    font-size: 13px;
+    margin-top:5px;
 }
